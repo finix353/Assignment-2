@@ -1,0 +1,382 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --font-color:#424247;
+}
+ /* header section */
+.nav{
+    width: 100%;
+    padding-left: 20px;
+    height: 50px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: white;
+    justify-content: space-around;
+}
+.header-name{
+    display: flex;
+    gap: 20px;
+}
+.header-name h2{
+    color: #000000;
+    font-size: 32px;
+}
+
+.hamburger{
+    display: none;
+}
+
+.link{
+    font-size: 18px;
+    margin-left: 40px;
+}
+
+.link a{
+    color: var(--font-color);
+    text-decoration: none;
+    padding: 13px 10px 13px 10px;
+}
+
+/* banner section */
+/* .banner-container{
+    margin: 50px auto;
+    width: 1174px;
+    height: 500px;
+    border-radius: 18px;
+    background:linear-gradient(rgb(0,0,0,0.82),rgba(5, 4, 4, 0)),url('Images/Group\ 13\ \(1\)\ \(1\).png');
+    align-items: center;
+
+} */
+.Banner{
+    height: 500px;
+    border-radius: 16px;
+    background-image: url('Images/Group\ 13\ \(1\)\ \(1\).png');
+     background-repeat: no-repeat; background-size: cover;
+    margin: 150px;
+    margin-top: 25px;
+   
+}
+
+.banner-container{
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(0,0,0,0.82),rgba(5, 4, 4, 0));
+    /* background-position: center; */
+   
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+}
+
+.banner-container h1{
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.banner-container p{
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    max-width: 670px;
+    margin-bottom: 35px;
+}
+
+.banner-container form{
+    padding: 16px;
+    width: 70%;
+    min-height:90px ;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+}
+.banner-container .square{
+    border: 2px solid black;
+    width: 22%;
+    border-radius: 10px;
+    display: inline-flex;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0px 10px;
+}
+.banner-container form input[type=text]{
+    color: rgba(19, 19, 24, 0.50);
+padding: 20px;
+font-size: 16px;
+font-weight: 400;
+border-radius: 8px;
+
+}
+.Banner input[type=text]{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    border: none;
+}
+.banner-container button{
+    border-radius: 8px;
+background: #FF5400;
+color: #FFF;
+text-align: center;
+font-size: 16px;
+font-weight: 700;
+border: 2px solid black;
+    width: 22%;
+    border-radius: 10px;
+    display: inline-flex;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+/* popular travel section */
+.popular{
+    margin-top: 80px;
+    height: 550px;
+   border-radius: 16px;
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.popular-info{
+    width: 45%;
+}
+
+.header2{
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.primaryp{
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 162.5% ;
+    max-width:  577px;
+}
+.popular ul{
+    list-style-position: inside;
+}
+
+popular ul li{
+    text-indent: -1.3em;
+    padding-left: 1.2em;
+    
+
+}
+.popular .img-container{
+    width: 50%;
+    border-radius: 16px;
+    height: 100%;
+}
+.popular img{
+    border-radius: 16px;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.popular .solidp{
+    margin-bottom: 30px;
+
+}
+.popular-info ul li {
+    margin-bottom: 20px;
+    
+}
+.popular-info button{
+    padding: 14px 34px;
+    border-radius: 8px;
+    background: #FF5400;
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+@media screen and (max-width:600px) {
+    .nav{
+        justify-content: space-between;
+    }
+
+    .hamburger{
+        display: block;
+        margin-right: 20px;
+    }
+    .link{
+        display: none;
+    }
+    /* banner section */
+    .Banner{
+        width: 335px;
+        height: 490px;
+        background-position: center;
+        background-size:cover;
+    
+    }
+
+    .banner-container{
+        width: 335px;
+        display: BLOCK;
+    
+    }
+    .banner-container h1{
+        
+    font-size: 5VW;
+    text-align: center;
+    padding-top: 40PX;
+    padding-bottom: 20px;
+    }
+
+    .banner-container p{
+      max-width: 70vw;
+      margin: 0 auto 30px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 400;
+      line-height:  150% 
+    }
+    .banner-container form{
+        padding: 16px;
+        width: calc(100% - 32px);
+        margin:10px ;
+        min-height:300px ;   
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 16px;
+    }
+    .banner-container .square{
+        width: calc(100% - 32px);
+        height: 60px;
+        border: none;
+        border-radius: 8px;
+        color: rgba(19, 19, 24, 0.50);
+        font-size: 16px;
+        font-weight: 400;
+        padding: 0px 10px;
+    }
+    .banner-container form input[type=text]{
+        width: 100vw;
+    }
+    .Banner input[type=text]{
+        border-radius: 18px;
+        width: calc(100% - 32px);
+        
+    }
+    .banner-container button{
+        border-radius: 8px;
+        background: #FF5400;
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        width: calc(100% - 32px);
+        border-radius: 10px;
+        height: 60px;
+        border-radius: 8px;
+        gap: 10px;
+    }
+
+    .popular{
+        min-height: 900px;
+       display: flex;
+       flex-direction: column;
+       height: 100%;
+       gap: 30px;
+    }
+
+    .popular-info{
+        width: 100%;
+    }
+
+    .header2{
+        font-size: 6vw;
+    }
+
+    .primaryp{
+        color: rgba(19, 19, 24, 0.70);
+         font-weight: 400;
+        line-height:  171.429% ;
+        font-size: 14px;
+    }
+
+    .popular .img-container{
+        width: 100%;
+        border-radius: 16px;
+        height: 100%;
+    }
+
+    .popular .solidp{
+        color: #5A5A5D;
+        font-size: 14px;
+        line-height: 171.429%;
+    }
+
+    .popular-info ul li {
+        margin-bottom: 20px;
+    }
+
+    .popular-info button{
+        padding: 10px 18px;
+        border-radius: 8px;
+        background: #FF5400;
+        border: none;
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 800;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
